@@ -1,0 +1,256 @@
+<div class="container col-8 my-5 br-2 rounded ">
+    <div class="py-5 text-center ">
+        <img class="mb-4 d-block mx-auto " src="checkout1.jpg ">
+        <h2>Checkout Form</h2>
+        <p class="lead ">Please fill this...</p>
+    </div>
+</div>
+
+<div class="container ">
+    <h4 class="mb-3 ">Billing Address</h4>
+    <form novalidate>
+        <div class="row g-3 ">
+            <div class="col-sm-6 ">
+                <label for="firstName " class="form-label ">First Name</label>
+                <input id="firstName " type="text " class="form-control " placeholder="Thor " required>
+                <div class="invalid-feedback ">
+                    Valid First Name is Required!
+                </div>
+            </div>
+            <div class="col-sm-6 ">
+                <label for="lastName " class="form-label ">Last Name</label>
+                <input id="lastName " type="text " class="form-control " placeholder="Odinson " required>
+                <div class="invalid-feedback ">
+                    Valid Last Name is Required!
+                </div>
+            </div>
+            <div class="col-12 ">
+                <label for="username " class="form-label ">Userame</label>
+                <div class="input-group ">
+                    <span class="input-group-text ">@</span>
+                    <input id="username " type="text " class="form-control " placeholder="ThorD " required>
+                </div>
+                <div class="invalid-feedback ">
+                    Valid Username is Required!
+                </div>
+            </div>
+            <div class="md-5 ">
+                <label for="country " class="form-label ">Country</label>
+                <select id="country " class="form-select ">
+                        <option value=" ">Choose...</option>
+                        <option value="Nigeria "></option>
+                        <option value="Ghana "></option>
+                        <option value="USA "></option>
+                        <option value="Cameroon "></option>
+                        <option value="Kenya "></option>
+                        <option value="Egypt "></option>
+                        <option value="Seychelles "></option>
+                        <option value="London "></option>
+                        <option value="Ireland "></option>
+                        <option value="Canada "></option>
+                        <option value="China "></option>
+                    </select>
+                <div class="invalid-feedback ">
+                    Valid Username is Required!
+                </div>
+            </div>
+            <div class="col-md-4 ">
+                <label for="state " class="form-label ">State</label>
+                <select id="state " class="form-select ">
+                        <option value=" ">Choose...</option>
+                        <option value="Nigeria ">Lagos</option>
+                        <option value="Nigeria ">Abuja</option>
+                        <option value="Nigeria ">Port Hacourt</option>
+                        <option value="Nigeria ">Ibadan</option>
+                        <option value="Nigeria ">Akwa Ibom</option>
+                        <option value="Nigeria ">Anambra</option>
+                        <option value="Nigeria ">Jos</option>
+                        <option value="Nigeria ">Ogun</option>
+                        <option value="Nigeria ">Ekiti</option>
+                        <option value="Nigeria ">Imo</option>
+                        <option value="Nigeria ">Delta</option>
+                    </select>
+                <div class="invalid-feedback ">
+                    Valid Username is Required!
+                </div>
+                <div class="col-md-3 ">
+                    <label for="zipcode " class="form-label ">Zipcode</label>
+                    <input id="zipcode " type="number " class="form-control " placeholder="1234 ">
+                    <div class="invalid-feedback ">
+                        Valid Username is Required!
+                    </div>
+                </div>
+
+                <hr class="my-4 ">
+                <div class="col-12 ">
+                    <div class="form-check ">
+                        <input id="saveinfo " type="checkbox " class="form-check-input ">
+                        <label class="form-check-label " for="sameAddress ">Shipping address is the same as Billing.</label>
+                    </div>
+                    <div class="form-check ">
+                        <input id="sameAddress " type="checkbox " class="form-check-input ">
+                        <label class="form-check-label " for="saveinfo ">Save this Info</label>
+                    </div>
+                </div>
+
+                <hr class="my-4 ">
+
+                <h4 class="mb-3 ">Payments</h4>
+                <div class="form-check ">
+                    <input id="creditCard " name="PaymentMethod " type="radio " class="form-check-input " checked required>
+                    <label for="creditCard ">Credit Card</label>
+                </div>
+                <div class="form-check ">
+                    <input id="directDebit " name="PaymentMethod " type="radio " class="form-check-input " checked required>
+                    <label for="directDebit ">Direct Debit</label>
+                </div>
+                <div class="form-check ">
+                    <input id="paypal " name="PaymentMethod " type="radio " class="form-check-input " checked required>
+                    <label for="paypal ">Pay Pal</label>
+                </div>
+                <div class="form-check ">
+                    <input id="payOnDelivery " name="PaymentMethod " type="radio " class="form-check-input " checked required>
+                    <label for="payOnDelivery ">Pay On Delivery</label>
+                </div>
+
+                <div class="row my-3 gy-3 ">
+                    <div class="col-md-6 ">
+                        <label class="fullName " class="form-label ">
+                                Name on Card
+                            </label>
+                        <input id="fullName " type="text " class="form-control ">
+                        <small class="text-muted ">
+                                Full Name as Displayed on Card
+                            </small>
+                        <div class="invalid-feedback ">
+                            Name on Card is Required
+                        </div>
+                    </div>
+                    <div class="col-md-6 ">
+                        <label for="cc-number " class="form-label ">
+                                Credit Card Number
+                            </label>
+                        <input id="cc-number " type="number " class="form-control ">
+                        <div class="invalid-feedback ">
+                            Credit Card Number is Required
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 ">
+                        <label for="cc-expire " class="form-label ">
+                                Expiration
+                            </label>
+                        <input id="cc-expire " type="number " class="form-control ">
+                        <div class="invalid-feedback ">
+                            Expiration is Required
+                        </div>
+                    </div>
+                    <div class="col-md-4 ">
+                        <label for="cc-cvv " class="form-label ">
+                                CVV
+                            </label>
+                        <input id="cc-cvv " type="number " class="form-control ">
+                        <div class="invalid-feedback ">
+                            CVV is Required
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="my-4 ">
+
+                <button type="submit " class="btn btn-primary btn-lg btn-block ">Continue to Checkout</button>
+
+            </div>
+        </div>
+    </form>
+</div>
+
+<!--------------END OF CHECKOUT FORM-------------->
+
+<div class="col-4 ">
+    <h4 class="d-flex justify-content-between align-item-center ">
+        <span class="text-muted ">Your Cart</span>
+        <span class="badge bg-secondary rounded-pill ">3</span>
+    </h4>
+    <ul class="list-group ">
+        <li class="list-group-item d-flex justify-content-between ">
+            <div>
+                <h6>Product Name</h6>
+                <span class="text-muted ">Brief Description</span>
+            </div>
+            <span class="text-muted ">N6500</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between ">
+            <div>
+                <h6>Second Produc</h6>
+                <span class="text-muted ">Brief Description</span>
+            </div>
+            <span class="text-muted ">N10000</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between ">
+            <div>
+                <h6>Third Product</h6>
+                <span class="text-muted ">Brief Description</span>
+            </div>
+            <span class="text-muted ">N50000</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between ">
+            <div>
+                <h6 class="text-success ">Promo Code</h6>
+                <span class="text-muted ">Sale 10</span>
+            </div>
+            <span class="text-muted ">N500</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between ">
+            <div>
+                <h6>Total N</h6>
+            </div>
+            <span class="text-muted ">66,500</span>
+        </li>
+    </ul>
+</div>
+
+
+
+<!-----------END OF YOUR CART----------------------------->
+
+<section>
+    <div class="wrapper">
+        <form action="https://formspree.io/f/xoqpplep" method="POST" id="my-form">
+
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName">
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName">
+            </div>
+
+            <div class="form-group">
+                <label for="tel">Phone</label>
+                <input type="tel" id="tel" name="tel">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">SUBMIT</button>
+            </div>
+
+        </form>
+
+    </div>
+    <div id="status"></div>
+</section>
+
+<!------------------END OF FORM---------------->
